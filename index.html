@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hab+Dash</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
 </head>
 
 <body>
@@ -74,29 +76,35 @@
         <img src="https://img.icons8.com/?size=100&id=60636&format=png&color=000000" alt="Forward" class="forward-icon">
       </div>
     </div>
-    <div class="product-showcase">
-      <div class="product-item">
-        <img src="images/top-section-1.jpg" alt="BOUQUET GIFT SET">
-        <p>BOUQUET GIFT SET</p>
-      </div>
-      <div class="product-item">
-        <img src="images/top-section-2.jpg" alt="GLIDE">
-        <p>GLIDE</p>
-      </div>
-      <div class="product-item">
-        <img src="images/top-section-3.jpg" alt="MAGNETIC CORE BOBBIN">
-        <p>MAGNETIC CORE BOBBIN</p>
-      </div>
-      <div class="product-item">
-        <img src="images/top-section-4.png" alt="PREMIUM STABILIZER">
-        <p>PREMIUM STABILIZER</p>
-      </div>
-      <div class="product-item">
-        <img src="images/top-section-5.jpg" alt="RETAIL DISPLAYS AND KITS">
-        <p>RETAIL DISPLAYS AND KITS</p>
+
+    <div class="custom-glide">
+      <div class="custom-glide__track" data-glide-el="track">
+        <ul class="custom-glide__slides">
+          <li class="custom-glide__slide product-item">
+            <img src="images/top-section-1.jpg" alt="BOUQUET GIFT SET">
+            <p>BOUQUET GIFT SET</p>
+          </li>
+          <li class="custom-glide__slide product-item">
+            <img src="images/top-section-2.jpg" alt="GLIDE">
+            <p>GLIDE</p>
+          </li>
+          <li class="custom-glide__slide product-item">
+            <img src="images/top-section-3.jpg" alt="MAGNETIC CORE BOBBIN">
+            <p>MAGNETIC CORE BOBBIN</p>
+          </li>
+          <li class="custom-glide__slide product-item">
+            <img src="images/top-section-4.png" alt="PREMIUM STABILIZER">
+            <p>PREMIUM STABILIZER</p>
+          </li>
+          <li class="custom-glide__slide product-item">
+            <img src="images/top-section-5.jpg" alt="RETAIL DISPLAYS AND KITS">
+            <p>RETAIL DISPLAYS AND KITS</p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
+
 
   <div class="store-locator-section">
     <div class="content">
@@ -113,30 +121,52 @@
 
   <div class="featured-products">
     <h2>FEATURED PRODUCTS</h2>
-    <div class="product-grid">
-      <div class="product-card-item">
-        <div class="product-card">
-          <img src="images/carousel-1.png" alt="EMBROIDERY STABILIZER" />
-        </div>
-        <p>EMBROIDERY STABILIZER</p>
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div class="product-card-item">
+              <div class="product-card">
+                <img src="images/carousel-1.png" alt="EMBROIDERY STABILIZER" />
+              </div>
+              <p>EMBROIDERY STABILIZER</p>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="product-card-item">
+              <div class="product-card">
+                <img src="images/carousel-2.png" alt="CUBBIE GREY ELEPHANT" />
+              </div>
+              <p>CUBBIE GREY ELEPHANT</p>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="product-card-item">
+              <div class="product-card">
+                <img src="images/carousel-3.png" alt="KIMBERBELL CUP OF CHEER" />
+              </div>
+              <p>KIMBERBELL CUP OF CHEER</p>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="product-card-item">
+              <div class="product-card">
+                <img src="images/carousel-4.png" alt="KIMBERBELL TWO SCOOPS" />
+              </div>
+              <p>KIMBERBELL TWO SCOOPS</p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="product-card-item">
-        <div class="product-card">
-          <img src="images/carousel-2.png" alt="CUBBIE GREY ELEPHANT" />
-        </div>
-        <p>CUBBIE GREY ELEPHANT</p>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">‹</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">›</button>
       </div>
-      <div class="product-card-item">
-        <div class="product-card">
-          <img src="images/carousel-3.png" alt="KIMBERBELL CUP OF CHEER" />
-        </div>
-        <p>KIMBERBELL CUP OF CHEER</p>
-      </div>
-      <div class="product-card-item">
-        <div class="product-card">
-          <img src="images/carousel-4.png" alt="KIMBERBELL TWO SCOOPS" />
-        </div>
-        <p>KIMBERBELL TWO SCOOPS</p>
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+        <button class="glide__bullet" data-glide-dir="=2"></button>
+        <button class="glide__bullet" data-glide-dir="=3"></button>
       </div>
     </div>
   </div>
@@ -164,8 +194,10 @@
       <div class="footer-column">
         <img src="images/logo.png" alt="Hab+Dash Logo" class="footer-logo" />
         <p class="footer-description">
-          Hab+Dash is a division of the filament<br>technologies company, Fil-Tec, Inc. and<br>is a proud U.S.A. manufacturer
-          of sewing<br>threads and pre-wound bobbins. Our<br>wholesale site is dedicated to offering<br>our manufactured products
+          Hab+Dash is a division of the filament<br>technologies company, Fil-Tec, Inc. and<br>is a proud U.S.A.
+          manufacturer
+          of sewing<br>threads and pre-wound bobbins. Our<br>wholesale site is dedicated to offering<br>our manufactured
+          products
           to commercial<br>embroiderers, long-arm quilters and retail<br>sewing shops. In addition to the products<br>we
           manufacture, we have sourced the best<br>products and accessories to benefit our<br>customers.
         </p>
@@ -216,6 +248,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
